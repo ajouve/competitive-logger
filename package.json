@@ -1,0 +1,19 @@
+{
+  "name": "competitive-logger",
+  "version": "1.0.0",
+  "description": "A wrapper for winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ajouve",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajouve/competitive-logger"
+  },
+  "dependencies": {
+    "winston": "^2.2.0",
+    "winston-redis": "^1.0.0"
+  }
+}
