@@ -14,11 +14,12 @@ var logger = {
   },
   addTransformer: function(transformer) {
     transformers.push(transformer);
-  },
+  }
 };
 
 logLevels.forEach(function(logLevel){
   logger[logLevel] = function(message, meta) {
+    if (!meta) meta = {};
     transform(message, meta);
     winston[logLevel](message, meta)
   }
