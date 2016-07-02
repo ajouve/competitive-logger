@@ -6,6 +6,7 @@ var transformers = [];
 
 var logger = {
   configureRedis: function(config) {
+    if (winston.transports.Redis) return;
     winstonRedis.Redis;
     winston.add(winston.transports.Redis, {
       host: config.host,
