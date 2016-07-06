@@ -15,6 +15,9 @@ var logger = {
   },
   addTransformer: function(transformer) {
     transformers.push(transformer);
+  },
+  disable: function() {
+    winston.clear();
   }
 };
 
