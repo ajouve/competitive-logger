@@ -23,7 +23,7 @@ var logger = {
 
     removeTransport(type) {
         winston.remove(winston.transports[type]);
-    }
+    },
 
     addTransport(type, options) {
         winston.add(winston.transports[type], options);
